@@ -1,0 +1,37 @@
+:host {
+  flex: 40;
+  margin: 10px;
+  padding: 10px;
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  .toggle {
+    cursor: pointer;
+  }
+
+  .creation-panel {
+    max-height: 500px;
+    transition: max-height 2s ease-in;
+    overflow: hidden;
+    position: relative;
+    &.hide {
+      max-height: 0;
+      transition: max-height 2s ease-out;
+    }
+    input, textarea {
+      box-sizing: border-box;
+      width: 100%;
+      border: none;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      padding: 5px;
+      margin: 5px;
+    }
+    textarea {
+      height: 200px;
+    }
+  }
+
+}

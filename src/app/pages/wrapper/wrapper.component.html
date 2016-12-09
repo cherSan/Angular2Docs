@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <app-header [username]="username">
+    <app-header-menu></app-header-menu>
+  </app-header>
+
+  <section class="content-block">
+    <app-side-panel></app-side-panel>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </section>
+</div>

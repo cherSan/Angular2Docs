@@ -1,0 +1,13 @@
+<div>
+  <div class="toggle">
+    <h2 (click)="toggle()">{{(!isCreate ? 'Create note'  : 'Back') | uppercase }} <md-icon>{{!isCreate ? 'lock_open' : 'lock_outline'}}</md-icon></h2>
+  </div>
+  <section class="creation-panel" [class.hide] = '!isCreate'>
+    <div>Title</div>
+    <input #nodeTitle>
+    <div>Text</div>
+    <textarea #nodeText></textarea>
+
+    <button (click)="save(nodeTitle, nodeText)">SEND</button>
+  </section>
+</div>

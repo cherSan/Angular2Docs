@@ -1,0 +1,5 @@
+<nav>
+  <a [routerLink]="['public', 'home']" [routerLinkActive]="'active'">{{'Home' | uppercase}}</a>
+  <a [routerLink]="['public', 'all_notes']" [routerLinkActive]="'active'">{{'Notes' | uppercase}}</a>
+  <button (click)="logOut()">Logout</button>
+</nav>

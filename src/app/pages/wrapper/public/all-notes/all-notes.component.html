@@ -1,0 +1,15 @@
+<section class="container">
+  <div class="filter">
+    <div><md-icon>search</md-icon> <input #searchBlock></div>
+  </div>
+  <div class="list">
+    <app-node-element class="list-element"
+                      *ngFor="let node of nodeList"
+                      [title]="node.title"
+                      [text]="node.text"
+                      [author]="node.author"
+                      [date]="node.date | date"
+    >
+    </app-node-element>
+  </div>
+</section>
